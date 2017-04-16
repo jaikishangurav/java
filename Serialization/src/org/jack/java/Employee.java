@@ -3,7 +3,7 @@ package org.jack.java;
 import java.io.Serializable;
 
 /*
- * If parent class Person is serializable then child class doesnt have to implement Serializable
+ * If parent class Person is serializable then child class doesnt have to implement Serializable as it inherits it from its parent class.
 An object is serializable only if its class or its superclass implements the Serializable (or Externalizable) interface.
 An object is serializable (itself implements the Serializable interface) even if its superclass is not. However, the firstsuperclass in the hierarchy of the serializable class, that does not implements Serializable interface, MUST have a no-arg constructor. 
 If this is violated, readObject() will produce a java.io.InvalidClassException in runtime.
