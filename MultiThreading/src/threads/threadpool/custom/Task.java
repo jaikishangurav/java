@@ -15,14 +15,14 @@ public class Task implements Runnable{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println(Thread.currentThread().getName()+ " is running.");
+		System.out.println(Thread.currentThread().getName()+ " is running.\n");
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println(Thread.currentThread().getName() + " completed execution.");
+		System.out.println(Thread.currentThread().getName() + " completed execution.\n");
 	}
 	
 }

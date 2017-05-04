@@ -16,7 +16,7 @@ public class MyThreadPool {
 		for(int i=0;i<nThreads;i++){			
 			threads[i]=new WorkerPool();
 			threads[i].setName("Thread-"+i);
-			System.out.println(threads[i].getName()+" created in ThreadPool.");
+			System.out.println(threads[i].getName()+" created in ThreadPool. \n");
 			threads[i].start();
 		}
 	}
@@ -36,7 +36,7 @@ public class MyThreadPool {
 	
 	public synchronized void shutdown(){
 	       this.poolShutDownInitiated = true;
-	        System.out.println("ThreadPool SHUTDOWN initiated.");
+	        System.out.println("ThreadPool SHUTDOWN initiated.\n");
 	    }
 	
 	private class WorkerPool extends Thread {
@@ -70,7 +70,7 @@ public class MyThreadPool {
           }   
 			}
 			}catch(Exception e){
-				System.out.println(Thread.currentThread().getName()+" has been STOPPED.");
+				System.out.println(Thread.currentThread().getName()+" has been STOPPED. \n");
 			}
 
 		}
